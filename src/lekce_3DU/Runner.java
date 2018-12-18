@@ -61,6 +61,8 @@ public class Runner {
 		System.out.println("Cena iPhonu je: " + iPhonePrice);
 		System.out.println("Je iPhone levný? " + isIphoneCheap);
 		System.out.println("Má nokia fotoaparát? " + hasNokiaCamera);
+		System.out.println("Volaká zmena");
+		
 	}
 
 }
