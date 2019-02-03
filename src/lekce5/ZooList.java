@@ -25,7 +25,7 @@ public class ZooList {
 	public void printList(List<String> shorterPets) {
 		for (String listElement : shorterPets) {
 			System.out.print(listElement);
-			System.out.print("\n");
+			System.out.print("\n"); 
 		}
 	}
 }

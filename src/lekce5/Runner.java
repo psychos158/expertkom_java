@@ -36,7 +36,7 @@ public class Runner {
 					
 				ZooList beastsZoolist = new ZooList(beasts);	
 				List<String> beastsShorterThanFive = beastsZoolist.getWordShorterThanFive();
-				beastsZoolist.printList(beastsShorterThanFive);
+				beastsZoolist.printList(beastsShorterThanFive); 
 		
 	}
 
