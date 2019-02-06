@@ -36,7 +36,11 @@ public class Example {
 		for(i=0; i < 10; i++) {
 			nums[i] = i;  
 		}
-		return nums; //nuly byly ti�t�ny proto, �e po napln�n� pole s n�zvem "nums" jsem vracel pole s n�zvem nums1, kter� napln�no nebylo. 
+		return nums; //nuly byly tištìny proto, že po naplnìní pole s názvem "nums" jsem vracel pole s názvem nums1, které naplnìno nebylo. 
+					/*super. Za mňa dotaz, či funkcie "setValuesForArray" a "setMinusValuesForArray" potrebujú prijímať parameter. Teraz oba prijímajú parameter typu pole integerov. 
+					 * Používaš tento parameter niekde v tej funkciíí? Ak nie, nemal by tam byť. To, či ho poučívaš zistíš jednoducho tak, že si klikneš napríklad vo funkcii "setMinusValuesForArray"
+					 * na názov "nums1" a ak niekde v tej funkiíí je táto premenná použitá, rozsvieti sa ti to. Keď tie parametre zmažeš, spusti znova program a nemalo by sa nič zmeniť 
+					 * na jeho výstupe. */ 
 	}
 	
 	public int[] setMinusValuesForArray(int[] nums2) {
