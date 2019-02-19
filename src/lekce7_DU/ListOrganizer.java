@@ -23,7 +23,6 @@ public ListOrganizer(ArrayList<Integer> ListOfIntegers) {
 	public ArrayList<Integer> getSortedIntegers(List<Integer>ListOfIntegers, String ascDesc){
 		ArrayList<Integer> ascSortedListOfIntegers = new ArrayList<>();
 		ArrayList<Integer> descSortedListOfIntegers = new ArrayList<>();
-		ArrayList<Integer> emptyList = new ArrayList<>();
 		
 		
 		if (ascDesc == "asc") {
