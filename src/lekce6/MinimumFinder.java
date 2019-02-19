@@ -12,7 +12,7 @@ public class MinimumFinder {
 	}
 	
 	public int getMinimumNumber(){
-		int minimumNumber = 0;
+		int minimumNumber = number.get(0);
 		
 		for (int i : number ) {
 			
