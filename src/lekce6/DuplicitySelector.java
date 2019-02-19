@@ -10,13 +10,18 @@ public class DuplicitySelector {
 		
 		ArrayList<String> ListOfDuplicities = new ArrayList<>();
 		HashSet<String> hash = new HashSet<String>();
+		HashSet<String> duplicitiesHash = new HashSet<String>();
 		
 		for (String s : ListData) {
 			if(hash.add(s)) {
 			}
 						
-			else {
+			else if (duplicitiesHash.add(s)){
+				
 				ListOfDuplicities.add(s);	
+			}
+			else {
+				
 			}
 	}
 		return ListOfDuplicities;	

@@ -8,10 +8,11 @@ public class Runner {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
 		//Minimum finder starts
 		ArrayList<Integer> list1 = new ArrayList<>();
 			list1.add(1);
-			list1.add(50);
+			list1.add(-50);
 			list1.add(13);
 			list1.add(4);
 			list1.add(10);
@@ -25,18 +26,21 @@ public class Runner {
 		
 		//Duplicity Selector starts
 		ArrayList<String> list2 = new ArrayList<>();
+		ArrayList<String> duplicityPrint = new ArrayList<>();
 		list2.add("duplicita1");
 		list2.add("duplicita1");
 		list2.add("duplicita1");
 		list2.add("duplicita2");
 		list2.add("duplicita2");
 		list2.add("duplicita2");
+		list2.add("duplicita3");
+		list2.add("duplicita3");
 		list2.add("duplicita2");
 		list2.add("neduplicita1");
 		list2.add("neduplicita2");
 		DuplicitySelector duplicity = new DuplicitySelector();
-		duplicity.getDuplicityStrings(list2);
-		
+		duplicityPrint = (ArrayList<String>) duplicity.getDuplicityStrings(list2);
+		System.out.print(duplicityPrint);
 		
 		//Duplicity Selector ends
 
