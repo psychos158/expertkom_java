@@ -2,7 +2,6 @@ package lekce7_DU;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class ListOrganizer {
 	/* 
@@ -12,34 +11,14 @@ public class ListOrganizer {
 	 * ktorý obsahuje tieto integere zoradené od najveèšieho po najmenší / od najmenšieho po najveèší. (na gitHube)
 	 */
 	
-private ArrayList<Integer> ListOfIntegers;
-
-public ListOrganizer(ArrayList<Integer> ListOfIntegers) {
-	super();
-	this.ListOfIntegers = ListOfIntegers;
-}
-	
-	
-	public ArrayList<Integer> getSortedIntegers(List<Integer>ListOfIntegers, String ascDesc){
-		ArrayList<Integer> ascSortedListOfIntegers = new ArrayList<>();
-		ArrayList<Integer> descSortedListOfIntegers = new ArrayList<>();
-		
-		
+	public ArrayList<Integer> getSortedIntegers(ArrayList<Integer>ListOfIntegers, String ascDesc){
 		if (ascDesc == "asc") {
 			Collections.sort(ListOfIntegers);
-				for (int i : ListOfIntegers) {
-					ascSortedListOfIntegers.add(i);
-				}
-				return ascSortedListOfIntegers;
 		}	
 		else  {
 			Collections.sort(ListOfIntegers, Collections.reverseOrder());
-			for (int i : ListOfIntegers) {
-				descSortedListOfIntegers.add(i);
-			}
-			return descSortedListOfIntegers;
 		}
-		
+		return ListOfIntegers;
 		
 		
 	}

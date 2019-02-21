@@ -18,10 +18,9 @@ public class Runner {
 		listOfInteger1.add(3);
 		String ascDesc = "asc";
 		
-		ListOrganizer unSortedIntegers = new ListOrganizer(listOfInteger1);
-		ArrayList<Integer> sortedListOfIntegers = new ArrayList<>();
-		sortedListOfIntegers = unSortedIntegers.getSortedIntegers(listOfInteger1, ascDesc );
-		System.out.print(sortedListOfIntegers);
+		ListOrganizer unSortedIntegers = new ListOrganizer();
+		ArrayList<Integer> listOfInteger2 = unSortedIntegers.getSortedIntegers(listOfInteger1, ascDesc);
+		System.out.print(listOfInteger2);
 	}
 
 }
